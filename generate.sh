@@ -6,7 +6,7 @@
 #
 export PATH=$GOPATH/src/github.com/hyperledger/fabric/build/bin:${PWD}/bin:${PWD}:$PATH
 export FABRIC_CFG_PATH=${PWD}/network-config
-CHANNEL_NAME=mychannel
+CHANNEL_NAME=posta-channel
 
 # create folders
 mkdir -p config
