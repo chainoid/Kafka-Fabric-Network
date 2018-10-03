@@ -82,7 +82,7 @@ git clone https://github.com/hyperledger/fabric.git
 ```
 - Clone this repository and enter the directory.
 ```bash
-git clone https://github.com/Presto412/Kafka-Fabric-Network.git
+git clone https://github.com/chainoid/Kafka-Fabric-Network.git
 cd Kafka-Fabric-Network
 ```
 NOTE : Give exec permissions to the shell scripts
