@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # Exit on first error, print all commands.
-set -e
+set -ev
 
 # Shut down the Docker containers for the system tests.
 docker-compose -f ./network-config/docker-compose-kafka.yml kill && docker-compose -f ./network-config/docker-compose-kafka.yml down

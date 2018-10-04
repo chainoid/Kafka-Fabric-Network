@@ -4,8 +4,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# Exit on first error, print all commands.
-set -ev
+# Exit on first error.
+set -e
 
 # don't rewrite paths for Windows Git Bash users
 export MSYS_NO_PATHCONV=1
@@ -19,7 +19,7 @@ docker-compose -f ./network-config/docker-compose-cli.yml up -d
 
 # wait for Hyperledger Fabric to start
 # incase of errors when running later commands, issue export FABRIC_START_TIMEOUT=<larger number>
-export FABRIC_START_TIMEOUT=10
+export FABRIC_START_TIMEOUT=12
 echo ${FABRIC_START_TIMEOUT}
 sleep ${FABRIC_START_TIMEOUT}
 
