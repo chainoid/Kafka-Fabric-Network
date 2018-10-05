@@ -3,6 +3,15 @@ version: '2'
 
 services:
 
+    ca-base:
+        image: hyperledger/fabric-ca
+        restart: always
+        environment:
+            - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+ #           - FABRIC_CA_SERVER_TLS_ENABLED=false # change to false to disable TLS
+        ports:
+            - 7054    
+           
     zookeeper:
         image: hyperledger/fabric-zookeeper
         ports:
