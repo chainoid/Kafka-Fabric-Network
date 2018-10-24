@@ -1,6 +1,7 @@
 # Kafka Fabric Network
 
 This repository holds the configuration and the sample chaincode for testing a kafka enabled network.
+ - NB! Nowadays the master of repository migrated to https://github.com/chainoid/HLFabric-Kafka-client
 
 ## Introduction
 
